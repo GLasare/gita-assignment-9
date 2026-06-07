@@ -1,0 +1,25 @@
+@use "variables";
+
+%main-padding {
+  max-width: 1440px;
+  padding-left: 145px;
+  padding-right: 145px;
+}
+
+%placeholder-style {
+  font-family: variables.$font-family;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  color: #99999a;
+}
+
+%form-field {
+  padding: 20px;
+  border-width: 2px;
+  background-color: variables.$input-background-clr;
+
+  &::placeholder {
+    @extend %placeholder-style;
+  }
+}
